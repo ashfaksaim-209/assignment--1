@@ -15,7 +15,7 @@
     margin-bottom:10px;
  }
 
- ul
+ #nav-ul
  {
     display: flex;
     /* text-justify:none; */
@@ -76,9 +76,10 @@ padding-bottom: 250px;
 
  #btn-benner
  {
-    margin-top: 300px;
+    margin-top: 270px;
       padding: 15px 35px;
-      margin-right: 0px;
+      margin-right: 0px; 
+      cursor: pointer;
  }
 
    #h1-benner
@@ -121,6 +122,7 @@ padding-bottom: 250px;
     max-width: 1200px;
     padding: 0px 60px;
     margin: auto;
+    margin-bottom: 100px;
 }
 
 .section-two-benner img
@@ -154,3 +156,105 @@ padding-bottom: 250px;
         margin-bottom: 24px;
         margin-left: 24px;
       }
+
+      /* speaker section end */
+
+
+      #purchase-two
+      {
+        display: flex;
+        justify-content: center;
+          gap: 15px;
+        flex-wrap: wrap;
+
+      }
+      .purchase-holder{
+        width: 350px;
+        /* min-height: 300px; */
+        border: 1px solid #1D4ED8;
+        padding: 20px;
+        box-sizing:border-box;
+        border-radius: 10px;
+      }
+
+      #purchase
+      {
+         max-width:1200px;
+         margin: 100px auto;
+         padding:0px 40px;
+
+      }
+
+      #purchase h1
+      {
+        text-align: center;
+        margin: 5px;
+        font-size: 40px;
+        margin-bottom: 20px;
+        
+      }
+
+
+      #purchase-title
+    {
+     text-align: center;
+     margin-bottom: 40px;
+     color: #888888;
+     font-size: 13px;
+
+
+    }
+
+
+    .purchase-holder ul
+    {
+        margin-top: 20px;
+        margin-bottom: 25px ;
+        padding-left:32px;
+    }
+
+    .purchase-holder li{
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+
+    .holder-top
+{
+    color: #888888;
+    font-size: 10px;
+     margin-left: 15px;
+     margin-bottom: 15px;
+
+}
+
+.holder-price
+{
+    font-weight: 800;
+    font-size: 35px;
+    margin-left: 15px;
+}
+
+.hr-line
+{
+    margin: 0px 10px;
+}
+
+.price-btn
+{
+     width: 100%;
+     border: 1px solid #1D4ED8;
+     border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+}
+
+
+#spacial-purchase{
+    background-color: #0D1B2A;
+    color: white;
+}
+#special-btn
+{
+    background-color: #2563EB;
+    color: white;
+}
