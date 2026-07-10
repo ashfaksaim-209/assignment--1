@@ -1,4 +1,156 @@
- h1
+ *
  {
-    color: aqua ;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
  }
+
+ nav
+ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:10px;
+    margin-bottom:10px;
+ }
+
+ ul
+ {
+    display: flex;
+    /* text-justify:none; */
+    list-style: none;
+    gap: 25px;
+    cursor: pointer;
+    font-weight: 200;
+    font-size: small;
+ }
+
+.logo
+{
+    display:flex;
+    align-items: center;
+    /* gap: 5px; */
+    margin-left:90px ;
+     
+}
+ 
+
+.cmn-button
+{
+    padding:  10px 30px;
+    background-color: #1D4ED8;
+    color: #ffff;
+    border:none;
+    border-radius:10px;
+  margin-right: 90px;
+
+}
+
+
+/* nav end */
+
+.hero-first
+{
+   width: 100%;
+ height: 600px;
+ background-image:url(./assets/banner.jpg) ;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-position: center;
+ background-repeat: no-repeat;
+background-size: cover; 
+padding-bottom: 250px;
+/* box-shadow: 0 7px 15px rgba(0,0,0,0.2); */
+
+}
+.hero-first-in
+{
+      color: #ffff;
+      text-align: center;
+      height: 110px;
+      width: 600px;
+      
+ }
+
+ #btn-benner
+ {
+    margin-top: 300px;
+      padding: 15px 35px;
+      margin-right: 0px;
+ }
+
+   #h1-benner
+   {
+    font-size: 55px;
+   }
+
+   #p-benner
+   {
+     font-size: 15px;
+    font-weight: 100;
+   }
+
+   /* benner end */
+   #section-two h1
+   {
+    margin-top: 80px;
+    margin-bottom: 56px;
+    text-align: center;
+   }
+
+
+
+   #section-two-div
+   {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+ }
+
+
+.section-two-benner
+{
+ box-shadow:0 4px 10px rgba(0,0,0,0.2);
+ border-radius:5px;
+}
+
+#section-two
+{
+    max-width: 1200px;
+    padding: 0px 60px;
+    margin: auto;
+}
+
+.section-two-benner img
+{
+    width: 100%;
+    display: block;
+}
+
+.section-two-benner h6 
+{
+    font-size: 10px;
+    color: #2563EB;
+    margin-top: 24px;
+    margin-left: 24px;
+}
+
+.speakers-name
+{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-left: 24px;
+}
+
+
+.speakers-work
+      
+      {
+        font-size: 10px;
+        margin-top: 8px;
+        margin-bottom: 24px;
+        margin-left: 24px;
+      }
