@@ -475,12 +475,13 @@ footer
     border-top: 1px solid #ffff;
     size: 8px;
     width: 50%;
+    
 }
 
 .footer-box-two
 {
-    display:flex ;
-    align-items: center;
+    display: flex ;
+    align-items : center;
 }
 
 .footer-box-one
