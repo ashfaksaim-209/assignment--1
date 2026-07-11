@@ -473,9 +473,9 @@ footer
     margin-bottom:25px ;
     border: none;
     border-top: 1px solid #ffff;
-    size: 8px;
+    size: 5px;
     width: 50%;
-    
+    opacity: 0.3;
 }
 
 .footer-box-two
@@ -500,6 +500,7 @@ footer
  #box-one-p
  {
     font-size: 8px;
+    opacity: 0.5;
 }
 
 #box-one-img
@@ -511,6 +512,7 @@ footer
 
 .footer-box-two p{
     font-size: 8px;
+    opacity: 0.5;
 }
 
 .footer-box-
