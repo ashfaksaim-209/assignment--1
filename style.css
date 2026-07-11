@@ -258,3 +258,190 @@ padding-bottom: 250px;
     background-color: #2563EB;
     color: white;
 }
+
+/* ai style */
+
+/* ============================
+   HALL OF FAME SECTION STYLES
+   ============================ */
+
+/* The whole section:
+   - white background to match the rest of the site
+   - generous top/bottom padding so it doesn't feel cramped
+     next to Pricing and Footer */
+.hof-section {
+  background-color: #ffffff;
+  padding: 100px 24px;
+  text-align: center;
+}
+
+/* Header block: badge, title, subtitle.
+   max-width keeps the subtitle from stretching too wide
+   on big screens, and margin: 0 auto centers it. */
+.hof-header {
+  max-width: 640px;
+  margin: 0 auto 64px auto;
+}
+
+/* Small pill badge above the title.
+   Light blue background + blue text = accent color used softly,
+   not as a loud block of color. */
+.hof-badge {
+  display: inline-block;
+  background-color: #eff6ff; /* very light blue */
+  color: #2563eb;             /* blue accent */
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 999px; /* fully rounded = pill shape */
+  margin-bottom: 20px;
+}
+
+/* Main section title.
+   Dark navy color, bold weight, slightly tight letter-spacing
+   for a premium "conference brand" feel. */
+.hof-title {
+  color: #0f172a; /* dark navy */
+  font-size: 40px;
+  font-weight: 800;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.5px;
+}
+
+/* Subtitle under the title.
+   Lighter gray text so the title stays the visual focus. */
+.hof-subtitle {
+  color: #64748b; /* muted gray-blue */
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Cards wrapper: CSS Grid makes this responsive automatically.
+   auto-fit + minmax means:
+   - on wide screens, 3 cards sit side by side
+   - on narrow screens, they wrap down to 1 column
+   without needing a separate mobile media query. */
+.hof-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Individual card.
+   Light gray background, rounded corners, soft shadow.
+   text-align left so the stats list reads naturally. */
+.hof-card {
+  background-color: #f8fafc; /* light gray */
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 32px 28px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05); /* soft shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* A small hover lift, so the section feels interactive
+   without adding any extra color. */
+.hof-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+/* The 2026 card is the most impressive year, so it gets
+   a subtle blue border to feel like the "current milestone"
+   card — still no extra colors, just the same blue accent. */
+.hof-card-featured {
+  border: 1px solid #2563eb;
+}
+
+/* Year label inside the card.
+   Bold blue text — this is where the accent color
+   gets used with more confidence. */
+.hof-year {
+  display: block;
+  color: #2563eb;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* Card title (e.g. "The Beginning") */
+.hof-card-title {
+  color: #0f172a;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+/* Stats list.
+   Removing default bullets/padding so we can style
+   each stat as its own clean row. */
+.hof-stats {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hof-stats li {
+  color: #334155;
+  font-size: 15px;
+  padding: 8px 0;
+  border-bottom: 1px solid #e2e8f0; /* thin divider between stats */
+}
+
+/* Remove the divider line under the last stat in each card */
+.hof-stats li:last-child {
+  border-bottom: none;
+}
+
+/* Wrapper for the button, just for centering */
+.hof-btn-wrap {
+  margin-top: 56px;
+}
+
+/* "View Full Journey" button.
+   Solid blue background = the main accent color used boldly,
+   since a button is meant to draw the eye and invite a click. */
+.hof-btn {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.hof-btn:hover {
+  background-color: #1d4ed8; /* slightly darker blue on hover */
+  transform: translateY(-2px);
+}
+
+/* ============================
+   RESPONSIVE ADJUSTMENTS
+   ============================ */
+
+/* On small screens (phones), tighten up the section padding
+   and reduce the title size so it doesn't look oversized. */
+@media (max-width: 600px) {
+  .hof-section {
+    padding: 64px 16px;
+  }
+
+  .hof-title {
+    font-size: 30px;
+  }
+
+  .hof-subtitle {
+    font-size: 16px;
+  }
+
+  .hof-card {
+    padding: 24px 20px;
+  }
+}
